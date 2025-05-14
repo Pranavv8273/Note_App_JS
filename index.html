@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Notes App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <span>&larr;</span>
+      <p>All Cloud</p>
+    </div>
+    <div class="navbar-right">
+      <span>&#x21AA;</span>  <!-- Share Icon -->
+      <span>&#8942;</span>   <!-- More Options Icon -->
+    </div>
+  </div>
+
+  <div class="app">
+    <h1>Notes</h1>
+
+    <div class="note-input">
+      <textarea id="noteText" placeholder="Write your note here..."></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+
+    <div class="notes-container" id="notesContainer">
+      <!-- Notes will appear here -->
+    </div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
